@@ -18,7 +18,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
     <!-- Todo: put here your site title -->
-    <title>[Your name here] | Developer</title>
+    <title>Cristian Tudor | Developer</title>
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
     <!-- Todo: improve your SEO by adding a small description of you -->
@@ -46,13 +46,13 @@
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hi, my name is <span class="text-color-main">Cristian Tudor</span>
           <br />
-          I'm the Unknown Developer.
+          I'm the Developer you need.
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Know more</a
+            >Hire me</a
           >
         </p>
       </div>
@@ -112,21 +112,23 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">Smart Brain</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    This is a website created in React that can detect faces. 
+                    It uses an API from a deep learning AI platform named Clarifai.
+                    After making an account, you can copy-paste a link containing a jpg photo and
+                    the app with the help from the API will detect a face in your picture.
+                    The app is posted on heroku as two projects, one for the frontend and one for the backend.
+                    The backend files have access to a database stored with Heroku Postgress.
+                    The database has two tables created, one for storing users and one for storing login info.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://smart-brain-home.herokuapp.com/"
                 >
                   See Live
                 </a>
@@ -134,15 +136,23 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/cristianstudor/smart-brain/"
                 >
-                  Source Code
+                  Front End
                 </a>
+                <a
+                rel="noreferrer"
+                target="_blank"
+                class="cta-btn text-color-main"
+                href="https://github.com/cristianstudor/smart-brain-api/"
+              >
+                Back End
+              </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://smart-brain-home.herokuapp.com/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -153,7 +163,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/smart-brain-front.png"
                     />
                   </div>
                 </a>
@@ -166,21 +176,29 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">Clothing Store</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    This app is a clothing store. It has a database implemented with firebase 
+                    and a payment method implemented with stripe. The database stores the categories 
+                    data and users data. After creating a new account, users can access their 
+                    profile, where they can modify their address and see their orders history. 
+                    Items can be added to the cart. The shopping cart data is saved inside 
+                    the browser's local storage so that it can be accessed later.
+                    At checkout users can go to the payment page 
+                    where they can make payments using a test credit card. After the user clicks 
+                    'payment', the order data is saved into the user's orders history inside firebase. 
+                    Payments can also be made without being logged in, in which case the order data
+                    isn't saved. The website is posted on netlify and uses a severless function for 
+                    requesting payment intents from stripe. The app is made 
+                    with React and the state is managed with redux and redux-saga. 
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://the-crwn-store-live.netlify.app/"
                 >
                   See Live
                 </a>
@@ -188,7 +206,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/cristianstudor/crwn-store"
                 >
                   Source Code
                 </a>
@@ -196,7 +214,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://the-crwn-store-live.netlify.app/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -207,7 +225,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/crwn-store-front.png"
                     />
                   </div>
                 </a>
@@ -215,64 +233,6 @@
             </div>
           </div>
           <!-- /END Project -->
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
-                <div>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-        </div>
-      </div>
-    </section>
-    <!-- /END Projects Section -->
 
     <!-- **** Contact Section **** -->
     <section id="contact">
@@ -299,13 +259,13 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
+          <!-- <a rel="noreferrer" href="#!" target="_blank">
             <i class="fa fa-twitter fa-inverse"></i>
-          </a>
+          </a> -->
           <a rel="noreferrer" href="#!" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://github.com/cristianstudor" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
@@ -319,33 +279,6 @@
             >Jacobo Martínez</a
           >
         </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobidev/simplefolio on GitHub"
-            >Star</a
-          >
-        </p>
-      </div>
-    </footer>
-    <!-- /END Footer Section -->
 
     <script defer type="module" src="index.js"></script>
   </body>
