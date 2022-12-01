@@ -46,13 +46,13 @@
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Cristian Tudor</span>
+          Salut, numele meu este <span class="text-color-main">Cristian Tudor</span>
           <br />
-          I'm the Developer you need.
+          Sunt developerul de care ai nevoie.
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Hire me</a
+            >Detalii</a
           >
         </p>
       </div>
@@ -62,7 +62,7 @@
     <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
+        <h2 class="section-title load-hidden">Despre mine</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__image load-hidden">
@@ -79,17 +79,17 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                I am a self taught developer. I strive to communicate well and solve real
-                world problems without over complicating things.
+                Sunt un developer autodidact, cu o bună capacitate de învățare. Urmăresc să am o comunicare bună și să rezolv
+                probleme reale fără a complica lucrurile.
               </p>
               <span class="d-flex mt-3">
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
+                  href="assets/resume_rou.pdf"
                 >
-                  View Resume
+                  CV
                 </a>
               </span>
             </div>
@@ -103,7 +103,7 @@
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
+          <h2 class="section-title dark-blue-text">Proiecte</h2>
 
           <!-- Notice: each .row is a project -->
           <div class="row">
@@ -112,14 +112,16 @@
                 <h3 class="project-wrapper__text-title">Smart Brain</h3>
                 <div>
                   <p class="mb-4">
-                    This is a website created in React that can detect faces. 
-                    It uses an API from a deep learning AI platform named Clarifai.
-                    After making an account, you can copy-paste an image link containing a jpg photo and
-                    the app with the help from the API will detect a face in your picture.
-                    The app is posted on Heroku as two projects, one for the front-end and one for the back-end.
-                    The back-end project has access to a database stored with Heroku Postgress.
-                    The database has two tables created, one for storing users and one for storing login info 
-                    where the passwords are stored encrypted.
+                    Acesta este un site web creat în React care poate detecta fețe. 
+                    Utilizează un API de la o platformă AI de deep learning numită Clarifai. 
+                    După ce îți faci un cont, poți introduce un link care trimite catre o imagine jpg, 
+                    iar aplicația cu ajutorul API-ului va detecta o față umană din imaginea introdusă. 
+                    Aplicația este postată pe Heroku ca două proiecte, unul pentru front-end și unul pentru back-end. 
+                    Partea de back-end are acces la o bază de date stocată cu Heroku Postgress. 
+                    Baza de date are două tabele create, unul pentru stocarea utilizatorilor și 
+                    unul pentru stocarea informațiilor de conectare în care parolele sunt stocate criptate.
+                    Este posibil ca la prima conectare încarcarea site-ului să dureze câteva secunde, 
+                    deoarece Heroku menține aplicația în hibernare când nu este folosită. 
                   </p>
                 </div>
                 <a
@@ -128,7 +130,7 @@
                   class="cta-btn cta-btn--hero"
                   href="https://smart-brain-home.herokuapp.com/"
                 >
-                  See Live
+                  Vezi Live
                 </a>
                 <a
                   rel="noreferrer"
@@ -143,9 +145,9 @@
                 target="_blank"
                 class="cta-btn text-color-main"
                 href="https://github.com/cristianstudor/smart-brain-api/"
-              >
+                >
                 Back End
-              </a>
+                </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
@@ -177,19 +179,17 @@
                 <h3 class="project-wrapper__text-title">Clothing Store</h3>
                 <div>
                   <p class="mb-4">
-                    This app is a clothing store. It has a database implemented with Firebase 
-                    and a payment method implemented with Stripe. The database stores the categories 
-                    data and users data. After creating a new account, users can access their 
-                    profile, where they can modify their address and see their orders history. 
-                    Items can be added to the cart. The shopping cart data is saved inside 
-                    the local storage so that it can be accessed later.
-                    At checkout users can go to the payment page 
-                    where they can make payments using a test credit card. After the user clicks 
-                    'payment', the order data is saved into the user's orders history inside Firebase. 
-                    Payments can also be made without being logged in, in which case the order data
-                    isn't saved. The website is posted on Netlify and uses a severless function for 
-                    requesting payment intents from Stripe. The app is made 
-                    with React and the state is managed with Redux and Redux-saga. 
+                    Această aplicație este un magazin de îmbrăcăminte. 
+                    Are o bază de date implementată cu Firebase și o metodă de plată implementată cu Stripe. 
+                    Baza de date stochează datele pentru articolele de îmbrăcăminte și datele utilizatorilor. După crearea unui cont nou, 
+                    utilizatorii își pot accesa profilul, unde își pot modifica adresa și își pot vedea istoricul comenzilor. 
+                    Articolele pot fi adăugate în coș. Datele coșului de cumpărături sunt salvate în spațiul de stocare local 
+                    pentru a putea fi accesate ulterior. Pentru a începe finalizarea plății, utilizatorii pot accesa pagina de plată unde 
+                    pot efectua plăți folosind un card de credit de testare. După ce utilizatorul dă clic pe „plată”, datele 
+                    comenzii sunt salvate în istoricul comenzilor utilizatorului în Firebase. Plățile pot fi efectuate și 
+                    fără a fi autentificat, caz în care datele comenzii nu sunt salvate. 
+                    Site-ul web este postat pe Netlify și folosește o funcție severless pentru a solicita intenții de plată de la Stripe. 
+                    Aplicația este realizată cu React, iar state-ul este gestionat cu Redux și Redux-saga.
                   </p>
                 </div>
                 <a
@@ -198,7 +198,7 @@
                   class="cta-btn cta-btn--hero"
                   href="https://the-crwn-store-live.netlify.app/"
                 >
-                  See Live
+                  Vezi Live
                 </a>
                 <a
                   rel="noreferrer"
@@ -206,7 +206,7 @@
                   class="cta-btn text-color-main"
                   href="https://github.com/cristianstudor/crwn-store"
                 >
-                  Source Code
+                  Cod sursa
                 </a>
               </div>
             </div>
@@ -237,7 +237,7 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">Phone: 0746685365</p>
+          <p class="contact-wrapper__text">Telefon: 0746685365</p>
           <p class="contact-wrapper__text">Email: cristi_tcs@live.com</p>
           <a
             rel="noreferrer"
@@ -245,7 +245,7 @@
             class="cta-btn cta-btn--resume"
             href="mailto:example@email.com"
             >
-            Write Email
+            Trimite Email
           </a>
         </div>
       </div>
